@@ -158,7 +158,7 @@ flowchart LR
 
 Document ingestion is a separate path:
 
-`Teacher upload -> Validation -> Text extraction -> Chunking + access metadata -> Embeddings/index -> Authorized retrieval`
+`Admin upload -> Validation -> Text extraction -> Chunking + access metadata -> Embeddings/index -> Authorized retrieval`
 
 ## 9. MVP Acceptance Criteria
 
