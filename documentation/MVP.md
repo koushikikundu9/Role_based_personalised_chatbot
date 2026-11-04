@@ -117,11 +117,11 @@ Initial success is demonstrated by passing the functional acceptance criteria in
 
 This is a starting point from the planning conversation, not a mandated technology decision:
 
-- **Frontend:** Next.js web application with student and teacher views.
+- **Frontend:** Streamlit web application with student and teacher views.
 - **Backend:** Python with FastAPI; authentication, role checks, document APIs, chat orchestration, and history access.
 - **Relational storage:** PostgreSQL or MySQL for users, profiles, document records, and chat history.
 - **Document processing:** PyMuPDF for PDFs and appropriate parsers for DOCX/TXT; chunking in a background-capable ingestion service.
-- **Vector search:** ChromaDB or FAISS for embeddings and metadata-filtered retrieval. Choose a deployment model that supports the required isolation, persistence, and backup needs.
+- **Vector search:** ChromaDB for embeddings and metadata-filtered retrieval. Choose a deployment model that supports the required isolation, persistence, and backup needs.
 - **Embeddings and language model:** select a provider/model after checking data handling, cost, latency, and deployment constraints. Do not send unauthorized or unnecessary personal data to the model provider.
 - **Deployment:** deploy frontend and backend with managed secrets, HTTPS, backups, and monitoring appropriate to a controlled pilot.
 
@@ -129,7 +129,7 @@ This is a starting point from the planning conversation, not a mandated technolo
 
 ```mermaid
 flowchart LR
-	User[Student or teacher] --> Web[Next.js web app]
+	User[Student or teacher] --> Web[Streamlit web app]
 	Web --> API[FastAPI backend]
 
 	API --> Auth[Authentication and role checks]
