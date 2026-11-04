@@ -10,7 +10,7 @@ This MVP validates the core project idea: permission-aware retrieval-augmented g
 
 - **Student:** asks questions about courses, syllabi, college policies, and study materials; generates study notes and practice quizzes from authorized content.
 - **Teacher:** asks academic or administrative questions, uploads and manages approved documents, and generates teaching notes or question sets from authorized content.
-- **System operator:** provisions accounts and maintains the application and its secrets. This operational role is not a separate user-facing product experience in the MVP.
+- **Admin:** provisions accounts and maintains the application and its secrets. This operational role is not a separate user-facing product experience in the MVP.
 
 User role and academic context (such as department, semester, and subjects) must be established through a trusted process. A user must not be able to grant themselves a teacher role.
 
