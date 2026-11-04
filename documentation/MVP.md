@@ -142,7 +142,7 @@ flowchart LR
 	Chat --> History[(User-scoped chat history)]
 	Chat --> Web
 
-	Teacher[Teacher] -->|Upload document| Web
+	Admin[Admin] -->|Upload document| Web
 	Web --> Ingest[Document ingestion]
 	Ingest --> Validate[File and metadata validation]
 	Validate --> Extract[Text extraction and chunking]
